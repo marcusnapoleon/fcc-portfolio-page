@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai|Poiret+One|Roboto|Roboto+Mono|Secular+One&display=swap');
+/*
+font-family: 'Baloo Bhai', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Secular One', sans-serif;
+font-family: 'Poiret One', cursive;
+*/
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: rgb(82, 82, 82);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: rgb(82, 82, 82);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: rgb(249, 58, 31);
+  }
+
+/* Box-sing border-box */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	width: 1000px;
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* Some default styles to make each box visible */
+.box {
+color: white;
+text-align: left;
+}
+
+/* Colors for each box */
+.image { 
+background: #1464b9;
+}
+.info { 
+background: #1464b9;
+}
+.summary { 
+background:#ffffff;
+}
+.skills { 
+background: #34495e;
+}
+.education { 
+background:#ffffff;
+}
+.experience { 
+background: #e67e22;
+}
+
+
+
+/*  FlexBox Section */
+
+.container {
+	display: flex;
+	flex-wrap: wrap;	
+}
+
+/* RESUME IMAGE */
+.image {
+	height: auto;
+	width: 25%;	
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	border-right: 2px solid #FFFFFF;
+	padding: 35px;
+	animation: 2s fadein 2s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+.image img {
+	width: 130px;
+	height: 130px;
+	transform: (-50%, -50%);
+	border-radius: 50%;
+}
+
+
+/* MAIN BODY - SUMMARY/SKILLS/EDUCATION/EXPERIENCE/SOCIAL */
+#bodyFade {
+	opacity: 0;
+	animation: 2s slidein 2s forwards;
+  }
+@keyframes slidein {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+
+
+/* APPLICANT DETAILS */
+.info {
+	width: 75%;
+	padding: 0 50px;
+	animation: 2.25s fadein 2.25s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+
+/* APPLICANT SUMMARY */
+.summary {
+	width: 100%;
+	padding: 10px 50px 20px;
+	color: #34495e;
+	opacity: 0;
+	animation: 2.25s slidein 2.5s forwards;
+  }
+@keyframes slidein {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.summary p {
+	text-indent: 50px;
+}
+
+
+/* APPLICANT SKILLS */
+.skills {
+	width: 35%;
+	padding: 10px 50px;
+	opacity: 0;
+	animation: 2.25s slidein 2.75s forwards;
+  }
+@keyframes slidein {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.skillTitle {
+    margin-bottom: 35px;
+}
+.social_panel ul{
+	list-style: none;	
+}
+.fab {
+	font-size: 1.5em;
+	color: white
+}
+
+
+/* EDUCATION and TRAINING */
+.education {
+	padding-left: 20px;
+	padding-top: 5px;
+	width: 60%;
+	height: auto;
+	color: #34495e;
+	opacity: 0;
+	animation: 2.25s slidein 2.8s forwards;
+  }
+@keyframes slidein {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.spanBox {
+	display: flex;
+	width: 100%;
+	height: 25px;
+	justify-content: space-between;
+	font-weight: bolder;
+	padding-bottom: 25px;
+}
+.course__name {
+	width: 65%;
+	height: 25px;
+}
+.course__date-place {
+	width: 30%;
+	height: 25px;
+	text-align: right;	
+}
+hr {	
+	border: 1px solid #34495e;
+	width: 625px;
+}
+
+
+/* JOB EXPERIENCE */
+.experience {
+	width: 100%;
+	padding: 10px 50px;
+	border-top: 3px solid #ffffff;
+	opacity: 0;
+	animation: 2.5s slidein 2.5s forwards;
+  }
+@keyframes slidein {
+	100% {
+		opacity: 1;
+		margin-top: 0;
+	}
+}
+.projBold {
+	font-weight: bolder;
+}

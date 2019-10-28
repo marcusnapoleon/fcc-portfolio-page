@@ -1,0 +1,473 @@
+  /* ***   RESPONSIVE STYLE   *** */
+  @media screen and (max-width: 415px) {
+    .hero__title {
+      font-size: 8vw !important;
+    }
+    
+   
+    .fab {
+      font-size: 1.2em;
+    }
+	  
+	.Navbar__Link-brand {
+    width: 340px;
+    margin-left: auto;
+	  margin-right: auto;    
+  }
+  .Navbar__Link-brand img {
+    width: 100%;
+  }
+  .Navbar__Link-toggle {    
+    display: flex;
+    font-size: 1.75em;
+    margin-right: 15px;
+  }
+  .Navbar__Items {
+    display: none;
+  }
+	  .section-1 {
+    font-size: 1em;
+    justify-content: space-between;
+    padding: 25px;
+}
+	  .work__bts {
+	  margin-left: 0px;
+    margin-right: 0px;
+    width: 350px;
+    height: 160px;
+    flex-direction: column;
+    display: flex;
+	  }
+	  
+	  div #drift-widget {
+		  margin-right: 8px !important;
+	  }
+  }
+
+  @media screen and (max-width: 768px) {
+    .Navbar__Link-brand {
+    width: 340px;
+    
+  }
+  .Navbar__Link-toggle {
+    
+    display: none;
+    
+  }
+  nav .Navbar__Items {
+    display:none;
+  }
+
+        .fab {
+          font-size: 1.25em;
+        }
+	  
+	  .sign-up__section {
+		  width: 85%;
+	  }
+	  .social__section {
+		  width: 85%;
+	  }
+  }
+
+  @media screen and (max-width: 815px) {
+   
+    .menu__section img {
+    
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;	
+      }	  
+    .closebtn, .toggle__nav {
+      display: none;
+    }
+    .nav__bar {
+      display: flex;
+    }
+	  div #drift-widget {
+		  margin-right: 8px !important;
+	  }
+	  
+	  
+  }
+
+
+  
+  @media screen and (max-width: 1024px) {
+    .toggle__nav {
+			font-size: .65em;
+			margin: 5px;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+      align-items: center;
+      display: none;
+		}
+		
+	
+    .fab {
+      line-height: 1.40;
+    }
+    .closebtn, .toggle__nav {
+      display: none;
+    }
+	  .mobile__tablet__items {
+      display: flex;
+    }
+	  form.sign-up__section {
+    width: 65%;
+	}
+	#about .section-2 {
+		width: 60%;
+		padding: 30px;
+	}
+	  
+	  .section-1 {
+		  width: 35%;
+    padding: 30px;
+    justify-content: space-around;
+	  }
+	 .section-1 .myImg {
+	
+	width: 100px;
+	opacity: .75;
+	border-radius: 50%;	
+}
+	  .social__section {
+	width: 35%;
+    padding: 20px;
+	text-align: center;
+    justify-content: space-around;
+	  }
+	  .work__btns {
+    display: flex;
+		  width: 275px;
+		  margin-left: auto;
+		  margin-right: auto;
+    justify-content: space-evenly;
+    height: 160px;
+    flex-direction: column;
+}
+	  div #drift-widget {
+		  margin-right: 8px !important;
+	  }
+	 
+  }
+
+  
+  @media screen and (max-width: 1366px) {
+    .fab {
+      line-height: 1.25;
+    }
+    .closebtn, .toggle__nav {
+      display: none;
+    }
+	form.sign-up__section {
+    width: 60%;
+	}
+	#about .section-2 {
+		width: 60%;
+	}
+	  #about .work__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+	#about .portfolio__btn {
+    width: 250px;
+	}
+	  div #drift-widget {
+		  margin-right: 8px !important;
+	  }
+
+  }
+
+@media screen and (max-width: 1440px) {
+	#about .work__btns {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+	#about .portfolio__btn {
+    width: 250px;
+	}
+	div #drift-widget {
+		  margin-right: 8px !important;
+	  }
+}
+
+
+  @media screen and (max-width: 1600px) {
+    .fab {
+      line-height: 1.75;
+    }
+    .closebtn, .toggle__nav {
+      display: none;
+    }
+    .nav__bar {
+      display: flex;
+    }
+	  .sign-up__section {
+    width: 50%;
+	}
+	  .section-2 {
+		width: 50%;
+	}
+
+  }
+
+@media screen and (max-width: 1920px) {
+    .fab {
+      line-height: 1.75;
+    }
+    .closebtn, .toggle__nav {
+      display: none;
+    }
+    .nav__bar {
+      display: flex;
+    }
+	  .sign-up__section {
+    width: 50%;
+	}
+	  .section-2 {
+		width: 50%;
+	}
+	.work__btns {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+  }
+
+  /* Mobile Styles */
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    
+    
+    /* ***     Mobile and Tablet Fullscreen Menu Overlay    *** */
+    #mobile__tablet {
+      height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    /* left: -50px; */
+    background-color: rgb(20, 100, 185);
+    background-color: rgba(20, 100, 185, 1);
+    /* overflow-x: hidden; */
+    }
+    .mobile__tablet__items {
+      position: relative;
+    top: 15%;
+    display: flex;
+    
+    margin-top: 30px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }    
+    #mobile__tablet a {
+      padding: 15px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 1);
+    }
+    .closebtn {
+      position: fixed;
+      top: 10px;
+      right: 5px;
+      width: 50px;
+      display: none;
+    }
+    
+    .fa-times {
+      /* padding-top: 10px; */
+      font-size: 1.25em;
+      float: right;
+    /* width: 30px; */
+    border: none;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      align-content: center;
+      
+  }
+    .nav__link {
+      text-align: center;
+      align-content: center;
+      display: inline-block;
+      width: 200px;
+      height: 70px;
+      margin: 5px;
+      line-height: 1;
+    }		
+    .menu__section {
+			z-index: 2;
+			background-color: rgb(20, 100, 185);
+      display: flex;
+      height: 90px;
+      transition: all 1000ms ease;
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    }
+		
+		.menu__section img {
+			
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;	
+		}
+		.nav__bar {
+			display: none;			
+		}
+		
+    
+
+    /* *** Main Section/Hero Title *** */
+		.about__section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-image: url(img/abstract_back.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 0;
+		}
+		.hero__title {
+			position: absolute;
+  top: 55%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+			font-size: 4.5vw;		
+			font-family: 'Roboto', sans-serif;
+      text-shadow: 0px 2px 20px rgba(10, 52, 135, .7);
+      
+		}
+    .panel {
+      display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 300px;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 10px rgba(10, 52, 135, 1);
+    padding: 25px;
+    }
+	  
+   
+	/*  *** About/Work Section ***  */
+	  #about .section-2 {
+    width: 95%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+		  padding: 30px;
+	  }
+	  form.sign-up__section {
+		  width: 95%;
+	  }
+
+    /* *** Form/Map/Contact Section */
+    .contact__section {
+      width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(0, 107, 246, .5), rgba(255, 255, 255, .5) 25%, rgba(4, 253, 253, .75)), url(img/contactBground.jpg);
+    background-size: cover;
+    background-attachment: fixed;  
+    }
+    .box {
+      display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 300px;
+    margin: 10px auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: .5px;
+    box-shadow: 0px 0px 10px rgba(10, 52, 135, 1);
+    }
+    .sign-up__section {
+      height: 320px;
+    }
+    .form__input {
+      height: 30px;
+      width: 100%;
+      border: none;
+      color: rgb(0, 0, 0);
+    }
+	  .social__section {
+		  padding: 50px 25px;
+	  } 
+    .social__icons  {
+      width: 80%;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: space-around;
+    }
+	  .work__icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+	  
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait){
+	#about .section-2 {
+    width: 60%;
+}
+	form.sign-up__section {
+    width: 60%;
+}
+	.work__btns {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    height: 160px;
+	
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+	#about .section-2 {
+    width: 60%;
+}
+	form.sign-up__section {
+    width: 60%;
+}
+	.section-1 {
+		width: 35%;
+	}
+	.social__section {
+		height: auto;
+		width: 35%;
+	}
+	
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {
+	#about .section-2 {
+    width: 50%;
+}
+	form.sign-up__section {
+    width: 50%;
+}
+	.section-1 {
+		width: 35%;
+	}
+	.social__section {
+		height: auto;
+		width: 35%;
+	}
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8] <html class="no-js"> [endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marcus Lising - Web Developer Toronto, Canada</title>
+        <meta name="description" content="marcus lising, marcusnapoleon, marcuslising, marcus napoleon lising, mark napoleon lising, marcusnapoleon portfolio, marcusnapoleon resume, marcus lising resume, marcus lising portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css"> <!-- Base Style CSS -->
+         <link rel="stylesheet" href="css/mobile__styles.css"> <!--  Mobile Sized Display CSS -->
+         <script src = "js/script.js"></script>
+
+
+
+    </head>
+    <body>
+        
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class = "container">
+
+            <!-- Header/Nav Section-->
+               <header  class="Navbar">
+        <div class="Navbar__Link-brand">
+          <a href="#hero" onclick="closeNav()">
+           <img src = "portfolioAssets/img/logo-clr.png" />
+		  </a>
+         </div>
+         <a class="Navbar__Link-toggle" href="javascript:void(0)" id ="openbtn"  onclick="openNav()">
+           <i class="fas fa-bars"></i>
+         </a>
+       <nav class="Navbar__Items">
+         
+         <a href = "#about" class="Navbar__Link">
+           Portfolio
+         </a>
+         <a href = "#contact" class="Navbar__Link">
+           Contact
+         </a>
+       </nav>
+      
+     </header>
+     <div id="myNav" class="overlay">
+     	<a href="javascript:void(0)" id ="closebtn" onclick="closeNav()">
+			<i class="fas fa-times"></i>
+		</a>
+		<div class="overlay-content">
+			
+			<a href="#about" onclick="closeNav()">Portfolio</a>
+			<a href="#contact" onclick="closeNav()">Contact</a>
+		</div>
+	</div>
+
+
+            <!-- Main/Hero Page Section -->
+
+                <div class ="main__section" id = "hero" style="background-image: linear-gradient(0deg, rgba(155, 169, 83, .5), rgba(255, 255, 255, .25) 15%, rgba(10, 52, 135, .75)), url(portfolioAssets/img/toc2.png);">
+					<div class="hero__title">
+						<h2>Hello. <br>I'm Marcus, <br>I build websites.</h2>
+					</div>			
+                </div>
+
+            <!-- About/Work/Resume Link Panels Section -->
+                <section class = "about__section panels" id = "about">
+
+                    <div class = "section-1 panel">
+                       <img class = "myImg" src = "portfolioAssets/img/me3sqBrushed.jpg" />
+                        <p>
+                            My name is Marcus Lising, a Toronto based web developer. I build websites under a fundamental premise that <em><i class = "ideas__first">your ideas come first</i></em>. <b>Your vision, your brand</b>.<br><br>
+                        </p>            
+                    </div>
+
+                    <div class = "section-2 panel">
+                       <div class = "work__icons">
+                       		<i class="fas fa-briefcase"></i>
+                       		<i class="fas fa-file"></i>
+                       </div>
+                        <p>
+                            I invite you to see samples of the websites which I have designed and built and to access and download a copy of my resume for review. 
+                        </p>
+                       <div class = "work__btns">
+                        <a class = "portfolio__btn" href = "portfolioAssets/portfolio/portfolio-page.html" target="_blank">
+                            PORTFOLIO
+                        </a> 
+                        <a class = "portfolio__btn" href = "portfolioAssets/resume/index.html" target="_blank">
+                            RESUME
+                        </a>
+                        </div>            
+                    </div>
+
+                </section>
+
+            <!-- Map/Form/Social Section-->
+                <section class = "contact__section" >
+                    <iframe class="form__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.909196420094!2d-79.37501108450165!3d43.67085827912076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb513d9d115b%3A0xf50a6ec15047d372!2s77+Howard+St%2C+Toronto%2C+ON+M4X+1J9!5e0!3m2!1sen!2sca!4v1557434747135!5m2!1sen!2sca" frameborder="0"  allowfullscreen="">
+					</iframe>
+					
+					
+                    <form id = "contact" class = "sign-up__section box" enctype="text/plain" method="post" action="mailto:marcus.napoleon@sympatico.ca?subject=Inquiry from marcusnapoleon.com">
+                        <input class = "form__input" type="text" name="name" placeholder="Your name here" required >
+                        <input class = "form__input" type="text" name="email" placeholder="sample@sample.com" required>
+                        <input class = "form__input" type="number" name="phone" placeholder="416-555-5555" required>
+                        <textarea class = "form__input" name="message" style = "height: 80px; margin-bottom: 20px;" placeholder="Your message here" ></textarea>
+                        <a href="mailto:marcus@marcusnapoleon.com?Subject=Inquiry marcusnapoleon.com form" target="_top">
+                            <input type="submit" class="portfolio__btn formBtn" value = "SEND" style = "font-size: 20px"/>                        
+                        </a>
+                        
+                    </form>
+                    <div class = "social__section box">
+						<div class = "invite__contact">
+							<p>
+								Please do not hesitate to reach out and connect with me, I am currently available for permanent hire or freelance work.
+							</p>
+			
+						</div>
+						<div class = "social__icons">
+							
+							<a href="https://www.linkedin.com/in/marcuslising/" target="blank">
+								<i class="fab fa-linkedin-in" alt = "linkedin - professional profile"></i>
+							</a>
+						
+							<a href="https://www.freecodecamp.org/marcusnapoleon" target="blank">
+								<i class="fab fa-free-code-camp" alt= "freecodecamp - coding course certificate and profile"></i>
+							</a>
+						
+							<a href="https://github.com/marcusnapoleon" target="blank">
+								<i class="fab fa-github-alt" alt= "github - code repository"></i>
+							</a>
+							
+						</div>		
+
+					</div>
+					
+                </section>
+                
+                <footer>
+				
+                    <div class = "validation">
+                        <p>
+                            Site built by Marcus Lising &#169; 2019
+                        </p>
+                        
+                    </div>
+                </footer>
+            
+        </section>
+        
+    </body>
